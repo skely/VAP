@@ -17,7 +17,7 @@ public class DatoveTypy {
     boolean myBoolean = true, h=false; // velikost 1 bit !
     // znak
     char myChar = 'a'; // velikost 2 bytes; hodnota proměnné je jeden znak (ASCII value)
-
+    double x = 5;
     // Neprimitivní datové typy
     // text
     String myString = "Text"; //
@@ -43,4 +43,5 @@ public class DatoveTypy {
     String userName = myObj.nextLine();  // Read user input
     System.out.println("Username is: " + userName);  // Output user input
     }
+
 }

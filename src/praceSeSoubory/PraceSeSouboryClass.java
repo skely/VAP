@@ -30,12 +30,14 @@ public class PraceSeSouboryClass {
         int cetnost = 0;
 
         for (String el : data) {
-            int index = el.toLowerCase().indexOf(slovo.toLowerCase());  //str.toLowerCase();
+            //int index = el.toLowerCase().indexOf(slovo.toLowerCase());  //str.toLowerCase();
+            int index = el.indexOf(slovo);
 
             while (index != -1){
                 cetnost += 1;
                 el = el.substring(index+slovo.length());
-                index = el.toLowerCase().indexOf(slovo.toLowerCase());
+                index = el.indexOf((slovo));
+                //index = el.toLowerCase().indexOf(slovo.toLowerCase());
             }
         }
         return cetnost;

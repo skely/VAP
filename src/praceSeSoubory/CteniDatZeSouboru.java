@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class CteniDatZeSouboru {
     public static void main(String[] args) {
+        //String nazevSouboru = "/home/jedle/Projects/VAP/seznam.txt";
         String nazevSouboru = "seznam.txt";
         int maximalniPocetRadek = 20;
         String[] data = new String[maximalniPocetRadek];
@@ -14,10 +15,11 @@ public class CteniDatZeSouboru {
 
         try {
             File mujSoubor = new File(nazevSouboru);
+            System.out.println(mujSoubor.getAbsolutePath());
             Scanner sc = new Scanner(mujSoubor);
             for (int i=0; i<data.length; i++) {
                 if (sc.hasNextLine()){
-                    data[i] = sc.nextLine();
+                    //data[i] = sc.nextLine();
                     dataList.add(sc.nextLine());
                 } else {
                     break;
@@ -28,17 +30,19 @@ public class CteniDatZeSouboru {
             System.out.println("Soubor nenalezen.");
         }
 
-        for (String el : data){
-            System.out.println(el);
-        }
+        //for (String el : data){
+        //    System.out.println(el);
+        //}
 
-        String[] zkraceny = vratZkracenySeznam(data);
-        for (String el : zkraceny) {
-            System.out.println(el);
-        }
+        //String[] zkraceny = vratZkracenySeznam(data);
+        //for (String el : zkraceny) {
+        //    System.out.println(el);
+        //}
         for (String el : dataList){
             System.out.println(el);
         }
+
+
     }
 
 
