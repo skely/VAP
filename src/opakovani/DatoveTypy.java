@@ -42,6 +42,8 @@ public class DatoveTypy {
 
     String userName = myObj.nextLine();  // Read user input
     System.out.println("Username is: " + userName);  // Output user input
+    char promenna = 49;
+    System.out.println(promenna);
     }
 
 }

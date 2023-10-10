@@ -13,6 +13,7 @@ public class Main {
         }
 
         Polozka.readMe();
+        polePolozek[1].readMe();
     }
 }
 /* syntaxe for-cyklu (alternativa)

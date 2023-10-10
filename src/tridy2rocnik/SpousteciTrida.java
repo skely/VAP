@@ -12,9 +12,5 @@ public class SpousteciTrida {
         System.out.println(karel.getJmeno() + " zautocil na " + pavel.getJmeno() + " a dal mu za " + karel.getUtok() + "." );
         System.out.println(pavel.getJmeno() + " ma ted " + pavel.getZdravi() + " zivotu.");
 
-
-
-
-
     }
 }
