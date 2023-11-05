@@ -1,0 +1,29 @@
+Napište třídu PraceSeSoubory, tak aby obsahovala následující:
+- konstruktor bez parametru
+- metodu:
+public void zpracujData(String nazevSouboru)
+
+Tato metoda bude obsahovat kód, který má za úkol v souboru nazevSouboru najít řetězec ohraničený znaky %. Tento řetězec pak uložit do souboru, jehož název bude v souboru ohraničený znaky $.
+
+Třída Main, bude obsahovat toto:
+public class Main{
+public static void main(String[] args){
+PraceSeSoubory test = new PraceSeSoubory()
+test.zpracujData("testVAP.txt")
+}
+}
+
+
+Soubor testVAP.txt:
+tohle není důležité, to je jenom fluff.
+Naopak %tohle je děsně důležité:)% tohle už důležité není. Uložit důležité věci do souboru $vystupTestuVAP.txt$ aby byla dobrá známka.
+A tady je zase nedůležitý text, který nikoho nezajímá. 
+
+
+
+
+
+
+
+
+

@@ -6,9 +6,7 @@ public class Postava {
     int utok;
     String rasa;
 
-    public Postava(){
-
-    }
+    public Postava(){}
     public Postava(String jmeno){
         this.jmeno = jmeno;
     }

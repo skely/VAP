@@ -1,13 +1,17 @@
 package vlakna;
 
 public class Main2 {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args){
         System.out.println("Hlavní vlákno spuštěno");
         Vlakno mojeVlakno = new Vlakno("Druhe");
-        mojeVlakno.start();
-        while(mojeVlakno.isAlive()) {
-            Thread.sleep(1);
+        try {
+            mojeVlakno.start();
+            while (mojeVlakno.isAlive()) {
+                Thread.sleep(1);
+            }
+            System.out.println("Hlavní vlákno ukončeno");
+        } catch (InterruptedException e){
+            System.out.println("error");
         }
-        System.out.println("Hlavní vlákno ukončeno");
     }
 }

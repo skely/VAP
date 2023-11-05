@@ -1,5 +1,4 @@
 package vlakna;
-
 public class Main {
     public static void main(String[] args){
         System.out.println("Hlavní vlákno spuštěno");
@@ -15,11 +14,12 @@ public class Main {
                 return;
             }
         }
-        try {
-            mojeVlakno.join();
-        } catch (InterruptedException ex) {
-            System.out.println("Hlavní vlákno přerušeno");
-        }
+        //try {
+            //mojeVlakno.join();
+        //} catch (InterruptedException ex) {
+        //    System.out.println("Hlavní vlákno přerušeno");
+        //}
         System.out.println("Hlavní vlákno ukončeno");
     }
+
 }

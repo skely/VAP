@@ -1,5 +1,4 @@
 package vlakna;
-
 class Vlakno extends Thread {
     public Vlakno(String jmeno) {
         super(jmeno);

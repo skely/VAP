@@ -13,7 +13,7 @@ public class Vlakno extends Thread {
         while(pozice < zprava.length()) {
             System.out.print(zprava.charAt(pozice++));
             try {
-                Thread.sleep(1);
+                Thread.sleep(0);
             } catch (InterruptedException ex) {
                 System.out.println("Vlákno se zprávou \"" + zprava + "\" přerušeno");
                 return;
