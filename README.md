@@ -1,2 +1,2 @@
 # VAP
-tohle je readme
+readme k predmetu VAP
